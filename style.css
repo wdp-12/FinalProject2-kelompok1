@@ -811,406 +811,632 @@
 /*----------------------------------------------------------------*/
 /* ILHAM AREAAAAAAAAAA */
 /* =================================================================*/
-
-/* Penawaran */
-main {
+.banner-wrapper {
   display: flex;
-  justify-content: center;
+  position: relative;
+  max-width: 1240px;
+  height: 575px;
+  margin-top: 100px;
+  border-radius: 60px;
+  background-color: #F2F6FF;
+}
+
+.text-content:nth-child(1) {
+  display: flex;
   flex-direction: column;
-  margin: 5rem auto;
-}
-.judul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  margin: 2rem;
-  color: #234cad;
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
+  align-items: start;
+  width: 375px;
+  height: 100%;
+  margin: 0 100px;
 }
 
-.transformContent {
-  background-color: #f1f6ff;
-  margin-top: 70px;
-  border-radius: 50px;
-  padding: 1rem 4%;
+.text-content:nth-child(1) h3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #234CAD;
+  margin-top: 108px;
+  margin-bottom: 25px;
+  animation: slideUp .8s;
 }
 
-.transformContent .row-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.text-content:nth-child(1) p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #234CAD;
+  margin-top: 0;
+  margin-bottom: 50px;
+  animation: slideUp 1s;
 }
 
-.transformContent .row-1 .smallBox {
+.text-content:nth-child(1) button {
   width: 200px;
+  height: 65px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 36px;
+  border-radius: 100px;
+  color: #234CAD;
+  border: 3px solid #234CAD;
+  background-color: #F2F6FF;
+  transition: all 0.3s;
+  animation: slideUp 1.2s;
 }
 
-.transformContent .row-1 .bigBox .smallCard1 {
+.text-content:nth-child(1) button:hover {
+  transform: scale(0.9);
+}
+
+.card-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card1,
+.card8,
+.card-content {
+  box-shadow: 0 0 40px rgba(35, 76, 173, 0.1);
+}
+
+/* card 1 */
+.card1,
+.card8 {
+  width: 75px;
+  height: 75px;
+  border-radius: 20px;
   background-color: white;
-  padding: 15px 30px;
-  transform: translateY(-40px);
+}
+
+.card1 img,
+.card8 img {
+  position: relative;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card2 .card-content,
+.card4 .card-content,
+.card6 .card-content,
+.card7 .card-content {
+  width: 350px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: white;
   display: flex;
   align-items: center;
-  border-radius: 15px;
+
+}
+
+.card2 .card-content .progress img,
+.card5 .card-content .progress img {
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 18px;
+  border-radius: 100px;
 }
 
-.transformContent .row-1 .logo {
-  background-color: #f2f6ff;
-  padding: 30px;
+.card2 .card-content .progress {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin: 20px;
+  background:
+      radial-gradient(closest-side, white 90%, transparent 97%),
+      conic-gradient(#234CAD 25%, #F2F6FF 0);
 }
 
-.transformContent .textcontent1 {
-  text-align: left;
-  color: #234cad;
+.card5 .card-content .progress {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 20px;
+  background:
+      radial-gradient(closest-side, white 90%, transparent 97%),
+      conic-gradient(#234CAD 75%, #F2F6FF 0);
 }
 
-.transformContent .textcontent1 h3 {
-  font-size: 10px;
+.card2 .card-content .text-content p:nth-child(1),
+.card3 .card-content .text-content p:nth-child(1),
+.card4 .card-content .text-content p:nth-child(1),
+.card6 .card-content .text-content p:nth-child(1),
+.card7 .card-content .text-content p:nth-child(1) {
+  font-weight: 700;
 }
 
-.transformContent .textcontent1 p {
-  font-size: 10px;
+.card2 .card-content .text-content p:last-child,
+.card3 .card-content .text-content p:last-child,
+.card4 .card-content .text-content p:nth-child(2),
+.card4 .card-content .text-content p:nth-child(3),
+.card6 .card-content .text-content p:nth-child(2),
+.card6 .card-content .text-content p:nth-child(3),
+.card7 .card-content .text-content p:last-child {
+  margin-top: 7.4px;
+  font-size: 0.75em;
 }
 
-.transformContent .textcontent1 span {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 10px;
-}
-
-.transformContent .row-2 {
+/* card 3 */
+.card3 .card-content {
+  width: 276px;
+  height: 160px;
+  border-radius: 25px;
+  background-color: white;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card3 .card-content div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.card3 .card-content .icon,
+.card4 .card-content .icon,
+.card6 .card-content .icon,
+.card7 .card-content .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  transform: translateY(-110px);
-  padding-left: 23%;
 }
 
-.transformContent .row-2 .bigBox {
-  margin-right: 30px;
+.card3 .card-content .icon {
+  border: 3px solid #234CAD;
 }
 
-.transformContent .row-2 .bigBox .smallCard1 {
-  background-color: white;
-  padding: 10px 20px;
+.card3 .card-content .about-parts {
   display: flex;
+  margin: 0 20px;
+}
+
+.about-parts div {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: #F2F6FF;
+  cursor: pointer;
+}
+
+.about-parts div p {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14px;
+  margin-bottom: 0;
+}
+
+.about-parts div:nth-child(2) {
   position: relative;
+  left: -10px;
 }
 
-.transformContent .row-2 .logo {
-  padding: 20px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.transformContent .textcontent2 {
-  text-align: left;
-  color: #234cad;
-}
-
-.transformContent .textcontent2 h3 {
-  font-size: 10px;
-}
-
-.transformContent .textcontent2 p {
-  font-size: 10px;
-}
-
-.transformContent .textcontent2 span {
-  font-size: 10px;
-}
-
-.transformContent .row-2 .smallBox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: white;
-  width: 300px;
-  padding: 20px 40px;
-  border-radius: 20px;
-  transform: translateY(-20px);
-  color: #234cad;
-}
-
-.transformContent .row-2 .smallBox svg {
-  margin-right: 10px;
-}
-
-.transformContent .row-2 .textcontent3 {
-  text-align: left;
-}
-
-.transformContent .row-2 .textcontent3 h3 {
-  font-size: 13px;
-}
-
-.transformContent .row-2 .textcontent3 span {
-  font-size: 10px;
-}
-
-.transformContent .row-3 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  transform: translateY(-80px);
-  padding-left: 4%;
-}
-
-.transformContent .row-3 .bigBox {
-  margin-right: 30px;
-  transform: translateY(-60px);
-}
-
-.transformContent .row-3 .bigBox .smallCard1 {
-  background-color: white;
-  padding: 5px 20px;
-  display: flex;
-  align-items: center;
-  border-radius: 15px;
+.about-parts div:nth-child(3) {
   position: relative;
+  left: -20px;
 }
 
-.transformContent .row-3 .logo {
-  padding: 10px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.transformContent .row-3 .logos {
-  background-color: #f2f6ff;
-  padding: 20px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.transformContent .textcontent2 {
-  text-align: left;
-  color: #234cad;
-}
-
-.transformContent .textcontent2 h3 {
-  font-size: 10px;
-}
-
-.transformContent .textcontent2 p {
-  font-size: 10px;
-}
-
-.transformContent .textcontent2 span {
-  font-size: 10px;
-}
-
-.transformContent .row-3 .smallBox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: white;
-  width: 300px;
-  padding: 15px 30px;
-  border-radius: 20px;
-  color: #234cad;
+.about-parts div:last-child {
   position: relative;
+  left: -30px;
 }
 
-.transformContent .row-3 .smallBox svg {
-  margin-right: 10px;
+.card4 .card-content .icon,
+.card6 .card-content .icon,
+.card7 .card-content .icon {
+  position: relative;
+  font-weight: 700;
+  background-color: #F2F6FF;
 }
 
-.transformContent .row-3 .textcontent3 {
-  text-align: left;
-}
-
-.transformContent .row-3 .textcontent3 h3 {
-  font-size: 13px;
-}
-
-.transformContent .row-3 .textcontent3 p {
-  font-size: 10px;
-}
-
-.transformContent .row-3 .textcontent3 span {
-  font-size: 10px;
+.card4 .card-content .icon .notif,
+.card6 .card-content .icon .notif {
   position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.transformContent .row-4 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 21%;
-  transform: translateY(-50px);
-}
-
-.transformContent .row-4 .bigBox {
-  margin-right: 30px;
-  transform: translateY(-60px);
-}
-
-.transformContent .row-4 .bigBox .smallCard1 {
-  background-color: white;
-  padding: 5px 20px;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
   display: flex;
   align-items: center;
-  border-radius: 15px;
+  justify-content: center;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: #234CAD;
+}
+
+.card4 .card-content .icon p,
+.card6 .card-content .icon p {
+  margin-bottom: 0;
+}
+
+.card4 .card-content .icon .notif p,
+.card6 .card-content .icon .notif p {
+  font-size: 8px;
+  line-height: 8px;
+  font-weight: 700;
+  color: white;
+}
+
+.card4 .card-content .text-content,
+.card6 .card-content .text-content {
   position: relative;
+  width: 230px;
+  height: 45px;
 }
 
-.transformContent .row-4 .logo {
-  padding: 10px;
-  border-radius: 50%;
-  margin-right: 10px;
+.card4 .card-content .text-content p:nth-child(3),
+.card6 .card-content .text-content p:nth-child(3) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
 }
 
-.transformContent .textcontent2 {
-  text-align: left;
-  color: #234cad;
+.card5 {
+  position: absolute;
+  top: 0;
 }
 
-.transformContent .textcontent2 h3 {
-  font-size: 10px;
-}
-
-.transformContent .textcontent2 p {
-  font-size: 10px;
-}
-
-.transformContent .textcontent2 span {
-  font-size: 10px;
-}
-
-.transformContent .row-4 .smallBox {
+.card5 .card-content {
+  position: absolute;
+  top: 75px;
+  left: 400px;
+  width: 130px;
+  height: 160px;
+  border-radius: 25px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
-  width: 150px;
-  padding: 20px 40px;
-  border-radius: 20px;
-  color: #234cad;
+  justify-content: center;
+}
+
+.card5 .card-content .progress {
+  margin-top: 0;
+}
+
+.card5 .card-content .text-content p {
+  font-size: 0.75em;
+}
+
+.card6 .card-content {
+  position: absolute;
+  bottom: 210px;
+  left: 300px;
+}
+
+
+.card7 .card-content {
+  position: absolute;
+  bottom: 95px;
+  left: 400px;
+}
+
+
+.features-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  width: 1240px;
+}
+
+.features-wrapper .title-content {
+  width: 1240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features-wrapper .title-content h3 {
+  text-align: center;
+  align-self: center;
+  width: 723px;
+  margin-bottom: 25px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.features-wrapper .title-content p {
+  align-self: center;
+  text-align: center;
+  width: 425px;
+  margin-bottom: 100px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.features-wrapper .features-content {
+  width: 1240px;
+  height: 575px;
+  border-radius: 60px;
+  background-color: #F2F6FF;
+  display: flex;
   position: relative;
 }
 
-.transformContent .row-4 .smallBox svg {
-  margin-right: 10px;
-}
-
-.transformContent .row-4 .textcontent3 {
-  text-align: left;
-}
-
-.transformContent .row-4 .textcontent3 h3 {
-  font-size: 13px;
-}
-
-.transformContent .row-4 .textcontent3 p {
-  font-size: 10px;
-  margin-top: 10px;
-  margin-left: -15px;
-}
-
-.transformContent .row-4 .textcontent3 span {
-  font-size: 10px;
+.features-content .card1 {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 55px;
+  left: 482px;
 }
 
-.efficiency {
-  padding: 1rem 5%;
+.features-content .card2 .card-content {
+  position: absolute;
+  top: 155px;
+  left: 783px;
+}
+
+.features-content .card3 .card-content {
+  position: absolute;
+  top: 155px;
+  left: 482px;
+}
+
+.features-content .card4 .card-content {
+  position: absolute;
+  top: 340px;
+  left: 482px;
+}
+
+.features-content .card5 .card-content {
+  position: absolute;
+  top: 465px;
+  left: 482px;
+}
+
+.features-content .card6 .card-content {
+  position: absolute;
+  top: 30px;
+  left: 583px;
+}
+
+.features-content .card7 .card-content {
+  position: absolute;
+  top: 270px;
+  left: 107px;
+}
+
+.features-content .card8 {
+  position: absolute;
+  top: 395px;
+  left: 382px;
+}
+
+#about {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.about-left .about-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-wrapper section:nth-child(2) {
+  width: 575px;
+  height: 575px;
+  background-color: #F2F6FF;
+  border-radius: 60px;
+  position: relative; 
+  overflow: hidden;
+  animation: slideDown 1.2s;
+}
+
+.about-left:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 375px;
+  height: 100%;
+  margin: 0 100px;
+}
+
+.about-left:nth-child(1) h3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #234CAD;
+  animation: slideUp .8s;
+}
+
+.about-left:nth-child(1) p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #234CAD;
+  animation: slideUp 1s;
+}
+
+.about-left:nth-child(1) button {
+  width: 200px;
+  height: 65px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 36px;
+  border-radius: 100px;
+  color: #234CAD;
+  border: 3px solid #234CAD;
+  background-color: #F2F6FF;
+  transition: all 0.3s;
+  animation: slideUp 1.2s;
+}
+
+.about-left:nth-child(1) button:hover {
+  transform: scale(0.9);
+}
+
+.about-content {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.efficiency .card {
+  align-items: flex-start;
   background-color: white;
-  width: 50%;
-  padding: 20px;
-  border-radius: 15px;
-  height: 150px;
+  width: 438px;
+  height: 125px;
+  border-radius: 25px;
+  margin: 23px;
+  cursor: pointer;
+  animation: slideUp 2.0s;
 }
 
-.efficiency .col-1 {
-  width: 40%;
-}
-
-.efficiency .col-1 h3 {
-  color: #234cad;
-  font-size: 50px;
-}
-
-.efficiency .col-1 p {
-  font-size: 15px;
-  margin: 20px 0;
-  color: #234cad;
-}
-
-.efficiency .col-1 button {
-  padding: 10px 20px;
-  border-radius: 30px;
-  background-color: transparent;
-  border: 2px solid #234cad;
-  color: #234cad;
-}
-
-.efficiency .col-2 {
-  padding: 30px;
-  width: 57%;
-  background-color: #f2f6ff;
-  color: #234cad;
+.about-content .icon {
+  position: relative;
+  font-weight: 700;
+  background-color: #F2F6FF;
+  margin: 0 20px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
   display: flex;
-  gap: 20px;
-  border-radius: 30px;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.efficiency .col-2 .card {
-  width: 280px;
+.about-content .icon .notif {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: #234CAD;
 }
 
-.efficiency .col-2 .card .sect-1 {
+.about-content .icon .notif p {
+  color: white;
+  margin: auto;
+  padding-top: 1px;
+  font-size: 8px;
+}
+
+.about-content .icon p {
+  font-weight: 700;
+  margin: auto;
+  font-size: 20px;
+}
+
+.col-3 .about.col {
+  padding-top: 80px;
+}
+
+.about-col:nth-child(1) {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.about-col:nth-child(2) {
+  padding-left: 160px;
+  margin-top: 80px;
+}
+
+.about1 .about-content .text-content p:nth-child(1),
+.about2 .about-content .text-content p:nth-child(1),
+.about3 .about-content .text-content p:nth-child(1),
+.about4 .about-content .text-content p:nth-child(1),
+.about5 .about-content .text-content p:nth-child(1),
+.about6 .about-content .text-content p:nth-child(1) {
+  font-size: 20;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.about1 .about-content .text-content p:last-child,
+.about2 .about-content .text-content p:last-child,
+.about3 .about-content .text-content p:last-child,
+.about4 .about-content .text-content p:last-child,
+.about5 .about-content .text-content p:last-child,
+.about6 .about-content .text-content p:last-child {
+  margin-top: 7.4px;
+  font-size: 0.75em;
+}
+
+.about1 .about-content,
+.about2 .about-content,
+.about3 .about-content,
+.about4 .about-content,
+.about5 .about-content,
+.about6 .about-content {
+width: 276px;
+height: 160px;
+border-radius: 25px;
+background-color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+
+.about1 .about-content div:first-child,
+.about2 .about-content div:first-child,
+.about3 .about-content div:first-child,
+.about4 .about-content div:first-child,
+.about5 .about-content div:first-child,
+.about6 .about-content div:first-child {
   display: flex;
   align-items: center;
 }
 
-.efficiency .col-2 .card .sect-1 .logo {
-  margin-right: 10px;
+.about1 .about-content .icon,
+.about2 .about-content .icon,
+.about3 .about-content .icon,
+.about4 .about-content .icon,
+.about5 .about-content .icon,
+.about6 .about-content .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.efficiency .col-2 .card .sect-1 h3 {
-  font-size: 17px;
+.about1 .about-content .icon,
+.about2 .about-content .icon,
+.about3 .about-content .icon,
+.about4 .about-content .icon,
+.about5 .about-content .icon,
+.about6 .about-content .icon {
+  border: 3px solid #234CAD;
 }
 
-.efficiency .col-2 .card .sect-1 p {
-  font-size: 10px;
-  margin: 15px 0;
+.about1 .about-content .about-parts,
+.about2 .about-content .about-parts,
+.about3 .about-content .about-parts,
+.about4 .about-content .about-parts,
+.about5 .about-content .about-parts,
+.about6 .about-content .about-parts {
+  display: flex;
+  margin: 0 20px;
 }
 
-.efficiency .col-2 .card ul li {
-  display: inline-block;
-  list-style: none;
-  font-size: 10px;
-  background-color: #f2f6ff;
-  padding: 12px 10px;
-  border-radius: 50%;
-  margin-left: -10px;
-}
-
-@media (min-width: 480px) {
-  .efficiency {
-    flex-wrap: wrap;
-  }
-}
 
 /*----------------------------------------------------------------*/
 /* ENDS ILHAM AREAAAAAAAAAA */
