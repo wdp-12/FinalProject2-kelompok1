@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  margin: 0 20px;
+  /* margin: -1rem auto; */
 }
 
 @media (max-width: 991px) {
@@ -38,15 +38,16 @@
   object-fit: contain;
   object-position: center;
   width: 50px;
+  margin-left: 5rem;
   overflow: hidden;
-  align-self: stretch;
+  /* align-self: stretch; */
   max-width: 100%;
 }
 
 .menu-item {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 50px;
   margin: auto 0;
 }
 
@@ -60,14 +61,15 @@
 .menu2,
 .menu3,
 .menu4 {
+  text-decoration: none;
   color: #234cad;
-  font: 600 18px/161% Nunito, sans-serif;
+  font: 600 18px/161% "Nunito", sans-serif;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
   border: none;
   background: none;
-  padding: 0; 
-  outline: none; 
+  padding: 0;
+  outline: none;
 }
 
 .menu1:hover,
@@ -75,21 +77,22 @@
 .menu3:hover,
 .menu4:hover {
   color: #ff7f50; /* Change the color on hover */
+  text-decoration: underline;
 }
-
 
 .login {
   align-self: stretch;
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  margin-right: 5rem;
 }
 
 .masuk {
   color: #234cad;
   text-align: center;
   white-space: nowrap;
-  border-radius: 25px;
+  border-radius: 50px;
   border: 2px solid #234cad;
   flex-grow: 1;
   align-items: center;
@@ -97,12 +100,13 @@
   font: 700 18px/161% Nunito, sans-serif;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
-  outline: none; 
+  outline: none;
 }
 
 .masuk:hover,
-.daftar:hover{
-  color: #ff7f50;
+.daftar:hover {
+  background-color: #234cad;
+  color: #fff;
 }
 @media (max-width: 991px) {
   .masuk {
@@ -111,19 +115,19 @@
 }
 
 .daftar {
+  border: none;
   color: #234cad;
   text-align: center;
   white-space: nowrap;
-  border-radius: 25px;
+  border-radius: 50px;
   background-color: #f2f6ff;
   flex-grow: 1;
   align-items: center;
   padding: 17px 20px;
-  font: 700 18px/161% Nunito, sans-serif;
-  font: 700 18px/161% Nunito, sans-serif;
+  font: 700 18px/161% "Nunito", sans-serif;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
-  outline: none; 
+  outline: none;
 }
 
 @media (max-width: 991px) {
@@ -138,143 +142,1305 @@
 /* ENDS HAMZAH AREAAAAAAAAAA */
 /* =================================================================*/
 
-
-/*----------------------------------------------------------------*/
-/* ILHAM AREAAAAAAAAAA */
-/* =================================================================*/
-
-
-/*----------------------------------------------------------------*/
-/* ENDS ILHAM AREAAAAAAAAAA */
-/* =================================================================*/
-
-
 /*----------------------------------------------------------------*/
 /* ANSORI AREAAAAAAAAAA */
 /* =================================================================*/
-
-main {
+.banner {
   display: flex;
   justify-content: center;
+  background-color: #f1f6ff;
+  border-radius: 30px;
+  width: 90%;
+  margin: 4rem auto;
+  height: 780px;
+}
+.iconJumbutton {
+  display: flex;
   flex-direction: column;
-  align-self: center;
-  text-align: center;
-  margin: 1rem;
-  background-color: aquamarine;
-  padding: 2rem;
+  /* background-color: red; */
   width: 100%;
 }
-main h2 {
-  font-size: 3rem;
-  color: #234cad;
-  font-weight: 700;
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  text-align: center;
-  margin: 0;
+.textbanner {
+  /* background-color: rebeccapurple; */
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  align-self: center;
+  flex-direction: column;
+  padding: 5rem;
+  margin-left: -25rem;
 }
-main h5 {
+.textbanner h2 {
   color: #234cad;
   font-family: "Nunito", sans-serif;
-  margin: 0;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem; /* 116.667% */
+}
+.textbanner h5 {
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
+  line-height: 1rem; /* 116.667% */
+}
+.btnTextbanner {
+  padding: 1rem;
+  border-radius: 30px;
+  border: 2px solid #234cad;
+  width: 10rem;
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1rem; /* 163.636% */
+  transition: color 0.3s ease-in-out;
+}
+.btnTextbanner:hover {
+  background-color: #234cad;
+  color: #fff;
+}
+.Copy {
+  margin: -6rem;
+}
+.upCard {
+  display: flex;
+  justify-content: left;
+  margin: -4rem 6rem;
+  width: 70%;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.upCard img {
+  margin-left: 1rem;
+  align-self: center;
+}
+.TextupCard {
+  color: #234cad;
+  font-style: normal;
+  height: 100px;
+  font-family: "Nunito", sans-serif;
+}
+.TextupCard h3 {
+  margin: 1.5rem 0 0 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+.TextupCard h6 {
+  margin: 1rem 0 0 2rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+.IconProgress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem;
+  left: 28rem;
+  margin: -11rem 8rem;
+  position: relative;
+  width: 15%;
+  border-radius: 30px;
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2rem; /* 130% */
+}
+.Tmeet {
+  background-color: #fff;
+  display: flex;
+  justify-content: start;
+  margin: 13rem 6rem;
+  width: 55%;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.Tmeet img {
+  align-self: center;
+  margin-left: 1rem;
+  margin-bottom: 2.5rem;
+}
+.textTmeet {
+  color: #234cad;
+  font-style: normal;
+  height: 100px;
+  font-family: "Nunito", sans-serif;
+  margin-left: 2rem;
+  align-self: center;
+}
+.textTmeet h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+.textTmeet h6 {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 0.8rem;
+}
+.textTmeet {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* margin: 2rem auto; */
+  margin-bottom: 2.5rem;
+}
+.about-parts {
+  display: flex;
+  margin: 6rem auto;
+  position: absolute;
   text-align: center;
 }
-.satu {
-  background-color: #f2f6ff;
+.about-parts div {
   display: flex;
-  border: none;
-  border-radius: 20px;
-  margin: 2rem auto;
-  padding: 0;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  text-align: start;
-}
-
-.satu svg {
-  position: absolute;
-  left: 43rem;
-  /* background-color: black; */
-}
-.card1 {
-  /* position: fixed; */
-  position: relative;
-  display: flex;
-  height: 100px;
-  padding: 1rem;
-  margin: 6.5rem;
   justify-content: center;
   align-items: center;
-  left: 50rem;
-  border: none;
-  border-radius: 20px;
-  background-color: #fff;
-  gap: 10px;
-}
-.textContent1 h3 {
-  color: #234cad;
-  align-self: center;
-  top: 1rem;
-  font-family: "Nunito";
-  font-size: 1.4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 21px; /* 131.25% */
-  position: absolute;
-}
-.textContent1 p {
-  color: #234cad;
-  position: relative;
-  font-family: "Nunito";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 21px; /* 131.25% */
-  margin-top: 3.2rem;
-}
-.card1 span {
-  align-self: baseline;
-  color: #234cad;
-  font-family: "Nunito";
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  opacity: 80%;
-  line-height: 13px; /* 130% */
-}
-.card1 button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 2px solid white;
   background-color: #f2f6ff;
-  border-radius: 50px;
-  border: none;
-  font-size: 1.5rem;
-  padding: 20px;
+  cursor: pointer;
+}
+
+.about-parts div p {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14px;
+  margin-bottom: 0;
+  align-items: center;
+  color: #234cad;
+}
+
+.about-parts div:nth-child(2) {
+  position: relative;
+  left: -10px;
+}
+
+.about-parts div:nth-child(3) {
+  position: relative;
+  left: -20px;
+}
+
+.about-parts div:last-child {
+  position: relative;
+  left: -30px;
+}
+.CardJohn {
+  background-color: #fff;
+  display: flex;
+  justify-content: start;
+  margin: -11rem 0 0 6rem;
+  width: 85%;
+  gap: 2rem;
+  border-radius: 30px;
+}
+.CardJohn button {
   width: 75px;
   height: 75px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 2rem;
+  background-color: #f1f6ff;
+  align-self: center;
+  font-size: 1.5rem;
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
 }
-
-.card2 {
-  background-color: #fff;
-  margin: 20rem auto;
-  height: 10%;
+.btnSpan {
+  background-color: #234cad;
+  color: #fff;
+  width: 15px;
+  height: 15px;
   position: relative;
-  right: 20rem;
+  margin-left: -3.4rem;
+  top: 1.2rem;
+  border: 5px #fff solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+}
+.JohnText {
+  color: #234cad;
+  font-style: normal;
+  height: 100px;
+  font-family: "Nunito", sans-serif;
+  margin-left: 1rem;
+  align-self: center;
+}
+.JohnText h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+}
+.JohnText p {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 0.8rem;
+}
+.johnTime {
+  color: #234cad;
+  font-style: normal;
+  height: 100px;
+  font-family: "Nunito", sans-serif;
+  margin: 10px;
+  align-self: baseline;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.CardAnna {
+  position: absolute;
+  bottom: 17.5rem;
+  right: 14rem;
+  border-radius: 30px;
+  width: 24%;
+  background-color: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: auto;
   gap: 2rem;
-  padding: 2rem;
+}
+.CardAnna button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
   border: none;
-  border-radius: 20px;
+  margin-left: 2rem;
+  background-color: #f1f6ff;
+  align-self: center;
+  font-size: 1.5rem;
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+.btnSpanAnna {
+  background-color: #234cad;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin-left: -3.4rem;
+  top: 1.2rem;
+  border: 5px #fff solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+}
+.AnnaText {
+  color: #234cad;
+  font-style: normal;
+  height: 100px;
+  font-family: "Nunito", sans-serif;
+  margin-left: 1rem;
+  align-self: center;
+}
+.AnnaText h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+}
+.AnnaText p {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 0.8rem;
+}
+.annaTime {
+  color: #234cad;
+  font-style: normal;
+  height: 100px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  margin: 10px;
+  align-self: baseline;
+}
+.Mscard {
+  position: absolute;
+  bottom: 8rem;
+  right: 2rem;
+  border-radius: 30px;
+  width: 26%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 2rem;
+}
+.Mscard img {
+  align-self: center;
+  margin-left: -2rem;
+}
+.TextMscard {
+  color: #234cad;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+}
+.TextMscard h3 {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  gap: 2rem;
+  align-self: center;
+  margin: 2rem auto;
+}
+.TextMscard h6 {
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  margin-top: -1rem;
+}
+.Iconchat {
+  position: absolute;
+  bottom: -7.5rem;
+  right: 22rem;
+}
+
+/* priority feture */
+.superPriority {
+  display: flex;
+  width: 90%;
+  margin: 6rem;
+  justify-content: space-between;
+}
+.superPriority section {
+  flex-direction: row;
+  display: flex;
+}
+.superPriority .iconSuper {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f6ff;
+  margin-right: 3rem;
+}
+.content {
+  font-size: 1.3rem;
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+}
+.content h3 {
+  font-weight: 600;
+  line-height: 1.3rem;
+}
+.content p {
+  font-weight: 400;
+  line-height: 1.3rem;
+}
+/* product Feature */
+.productFeat {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #fff;
+  flex-direction: row;
+  margin: 10rem;
+  width: 80%;
+}
+.ProductIcon {
+  background-color: #f1f6ff;
+  width: 100%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.productHead {
+  /* background-color: red; */
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+.headtext {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: end;
+  justify-content: center;
+}
+.headtext h2 {
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  margin-left: 2.5rem;
+  font-weight: 900;
+  line-height: 3.5rem; /* 116.667% */
+}
+.headtext p {
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  margin-right: 7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; /* 116.667% */
+}
+.headtext a {
+  border: 2px solid blue;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin: 2rem 18rem 0 0;
+  color: #234cad;
+}
+.headtext a:hover {
+  background-color: #234cad;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.andrewCard {
+  background-color: #fff;
+  display: flex;
+  padding: 1rem;
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 30px;
+}
+.andrewCard button {
+  width: 90px;
+  height: 90px;
+  align-self: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #f1f6ff;
+  margin: 1rem;
+  color: #234cad;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+.btnSpanAndrew {
+  background-color: #234cad;
+  border: 5px solid #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin: 1.2rem auto;
+  right: 5rem;
+  font-weight: 900;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+}
+.andrewText {
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.andrewText h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1rem 0 -1rem -4rem;
+}
+.andrewText P {
+  left: -4rem;
+  position: relative;
+  font-weight: 400;
+}
+.andrewTime {
+  align-self: baseline;
+  margin: 25px 35px 0 0;
+  color: #234cad;
+  font-size: 0.9rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+.danielCard {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  border-radius: 30px;
+  opacity: 80%;
+}
+.danielCard button {
+  width: 80px;
+  height: 80px;
+  align-self: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #f1f6ff;
+  margin: 1rem;
+  color: #234cad;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+.btnSpandaniel {
+  background-color: #234cad;
+  border: 5px solid #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin: 1rem auto;
+  right: 5rem;
+  font-weight: 900;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+}
+.danielText {
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.danielText h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1rem 0 -1rem -4rem;
+}
+.danielText P {
+  left: -4rem;
+  position: relative;
+  font-weight: 400;
+}
+.danielTime {
+  align-self: baseline;
+  margin: 20px 20px 0 0;
+  color: #234cad;
+  font-size: 0.9rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+.markCard {
+  background-color: #fff;
+  display: flex;
+  width: 63%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 30px;
+  opacity: 60%;
+}
+.markCard button {
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #f1f6ff;
+  margin: 1rem;
+  color: #234cad;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+.btnSpanmark {
+  background-color: #234cad;
+  border: 5px solid #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin: 1rem auto;
+  right: 3.5rem;
+  font-weight: 900;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  line-height: 20px;
+}
+.markText {
+  color: #234cad;
+  font-family: "Nunito", sans-serif;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.markText h3 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 1rem 0 -1rem -2rem;
+}
+.markText P {
+  left: -2rem;
+  font-size: 0.8rem;
+  position: relative;
+  font-weight: 400;
+}
+.markTime {
+  align-self: baseline;
+  margin: 20px 20px 0 0;
+  color: #234cad;
+  font-size: 0.9rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
 
 /*----------------------------------------------------------------*/
 /* ENDS ANSORI AREAAAAAAAAAA */
 /* =================================================================*/
 
+/*----------------------------------------------------------------*/
+/* ILHAM AREAAAAAAAAAA */
+/* =================================================================*/
+.banner-wrapper {
+  display: flex;
+  position: relative;
+  max-width: 1240px;
+  height: 575px;
+  margin-top: 100px;
+  border-radius: 60px;
+  background-color: #F2F6FF;
+}
+
+.text-content:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 375px;
+  height: 100%;
+  margin: 0 100px;
+}
+
+.text-content:nth-child(1) h3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #234CAD;
+  margin-top: 108px;
+  margin-bottom: 25px;
+  animation: slideUp .8s;
+}
+
+.text-content:nth-child(1) p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #234CAD;
+  margin-top: 0;
+  margin-bottom: 50px;
+  animation: slideUp 1s;
+}
+
+.text-content:nth-child(1) button {
+  width: 200px;
+  height: 65px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 36px;
+  border-radius: 100px;
+  color: #234CAD;
+  border: 3px solid #234CAD;
+  background-color: #F2F6FF;
+  transition: all 0.3s;
+  animation: slideUp 1.2s;
+}
+
+.text-content:nth-child(1) button:hover {
+  transform: scale(0.9);
+}
+
+.card-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card1,
+.card8,
+.card-content {
+  box-shadow: 0 0 40px rgba(35, 76, 173, 0.1);
+}
+
+/* card 1 */
+.card1,
+.card8 {
+  width: 75px;
+  height: 75px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.card1 img,
+.card8 img {
+  position: relative;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card2 .card-content,
+.card4 .card-content,
+.card6 .card-content,
+.card7 .card-content {
+  width: 350px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+
+}
+
+.card2 .card-content .progress img,
+.card5 .card-content .progress img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 18px;
+  border-radius: 100px;
+}
+
+.card2 .card-content .progress {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 20px;
+  background:
+      radial-gradient(closest-side, white 90%, transparent 97%),
+      conic-gradient(#234CAD 25%, #F2F6FF 0);
+}
+
+.card5 .card-content .progress {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 20px;
+  background:
+      radial-gradient(closest-side, white 90%, transparent 97%),
+      conic-gradient(#234CAD 75%, #F2F6FF 0);
+}
+
+.card2 .card-content .text-content p:nth-child(1),
+.card3 .card-content .text-content p:nth-child(1),
+.card4 .card-content .text-content p:nth-child(1),
+.card6 .card-content .text-content p:nth-child(1),
+.card7 .card-content .text-content p:nth-child(1) {
+  font-weight: 700;
+}
+
+.card2 .card-content .text-content p:last-child,
+.card3 .card-content .text-content p:last-child,
+.card4 .card-content .text-content p:nth-child(2),
+.card4 .card-content .text-content p:nth-child(3),
+.card6 .card-content .text-content p:nth-child(2),
+.card6 .card-content .text-content p:nth-child(3),
+.card7 .card-content .text-content p:last-child {
+  margin-top: 7.4px;
+  font-size: 0.75em;
+}
+
+/* card 3 */
+.card3 .card-content {
+  width: 276px;
+  height: 160px;
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card3 .card-content div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.card3 .card-content .icon,
+.card4 .card-content .icon,
+.card6 .card-content .icon,
+.card7 .card-content .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card3 .card-content .icon {
+  border: 3px solid #234CAD;
+}
+
+.card3 .card-content .about-parts {
+  display: flex;
+  margin: 0 20px;
+}
+
+.about-parts div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: #F2F6FF;
+  cursor: pointer;
+}
+
+.about-parts div p {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14px;
+  margin-bottom: 0;
+}
+
+.about-parts div:nth-child(2) {
+  position: relative;
+  left: -10px;
+}
+
+.about-parts div:nth-child(3) {
+  position: relative;
+  left: -20px;
+}
+
+.about-parts div:last-child {
+  position: relative;
+  left: -30px;
+}
+
+.card4 .card-content .icon,
+.card6 .card-content .icon,
+.card7 .card-content .icon {
+  position: relative;
+  font-weight: 700;
+  background-color: #F2F6FF;
+}
+
+.card4 .card-content .icon .notif,
+.card6 .card-content .icon .notif {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: #234CAD;
+}
+
+.card4 .card-content .icon p,
+.card6 .card-content .icon p {
+  margin-bottom: 0;
+}
+
+.card4 .card-content .icon .notif p,
+.card6 .card-content .icon .notif p {
+  font-size: 8px;
+  line-height: 8px;
+  font-weight: 700;
+  color: white;
+}
+
+.card4 .card-content .text-content,
+.card6 .card-content .text-content {
+  position: relative;
+  width: 230px;
+  height: 45px;
+}
+
+.card4 .card-content .text-content p:nth-child(3),
+.card6 .card-content .text-content p:nth-child(3) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+
+.card5 {
+  position: absolute;
+  top: 0;
+}
+
+.card5 .card-content {
+  position: absolute;
+  top: 75px;
+  left: 400px;
+  width: 130px;
+  height: 160px;
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card5 .card-content .progress {
+  margin-top: 0;
+}
+
+.card5 .card-content .text-content p {
+  font-size: 0.75em;
+}
+
+.card6 .card-content {
+  position: absolute;
+  bottom: 210px;
+  left: 300px;
+}
+
+
+.card7 .card-content {
+  position: absolute;
+  bottom: 95px;
+  left: 400px;
+}
+
+
+.features-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  width: 1240px;
+}
+
+.features-wrapper .title-content {
+  width: 1240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features-wrapper .title-content h3 {
+  text-align: center;
+  align-self: center;
+  width: 723px;
+  margin-bottom: 25px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.features-wrapper .title-content p {
+  align-self: center;
+  text-align: center;
+  width: 425px;
+  margin-bottom: 100px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.features-wrapper .features-content {
+  width: 1240px;
+  height: 575px;
+  border-radius: 60px;
+  background-color: #F2F6FF;
+  display: flex;
+  position: relative;
+}
+
+.features-content .card1 {
+  position: absolute;
+  top: 55px;
+  left: 482px;
+}
+
+.features-content .card2 .card-content {
+  position: absolute;
+  top: 155px;
+  left: 783px;
+}
+
+.features-content .card3 .card-content {
+  position: absolute;
+  top: 155px;
+  left: 482px;
+}
+
+.features-content .card4 .card-content {
+  position: absolute;
+  top: 340px;
+  left: 482px;
+}
+
+.features-content .card5 .card-content {
+  position: absolute;
+  top: 465px;
+  left: 482px;
+}
+
+.features-content .card6 .card-content {
+  position: absolute;
+  top: 30px;
+  left: 583px;
+}
+
+.features-content .card7 .card-content {
+  position: absolute;
+  top: 270px;
+  left: 107px;
+}
+
+.features-content .card8 {
+  position: absolute;
+  top: 395px;
+  left: 382px;
+}
+
+#about {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.about-left .about-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-wrapper section:nth-child(2) {
+  width: 575px;
+  height: 575px;
+  background-color: #F2F6FF;
+  border-radius: 60px;
+  position: relative; 
+  overflow: hidden;
+  animation: slideDown 1.2s;
+}
+
+.about-left:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 375px;
+  height: 100%;
+  margin: 0 100px;
+}
+
+.about-left:nth-child(1) h3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #234CAD;
+  animation: slideUp .8s;
+}
+
+.about-left:nth-child(1) p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #234CAD;
+  animation: slideUp 1s;
+}
+
+.about-left:nth-child(1) button {
+  width: 200px;
+  height: 65px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 36px;
+  border-radius: 100px;
+  color: #234CAD;
+  border: 3px solid #234CAD;
+  background-color: #F2F6FF;
+  transition: all 0.3s;
+  animation: slideUp 1.2s;
+}
+
+.about-left:nth-child(1) button:hover {
+  transform: scale(0.9);
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  width: 438px;
+  height: 125px;
+  border-radius: 25px;
+  margin: 23px;
+  cursor: pointer;
+  animation: slideUp 2.0s;
+}
+
+.about-content .icon {
+  position: relative;
+  font-weight: 700;
+  background-color: #F2F6FF;
+  margin: 0 20px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content .icon .notif {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: #234CAD;
+}
+
+.about-content .icon .notif p {
+  color: white;
+  margin: auto;
+  padding-top: 1px;
+  font-size: 8px;
+}
+
+.about-content .icon p {
+  font-weight: 700;
+  margin: auto;
+  font-size: 20px;
+}
+
+.col-3 .about.col {
+  padding-top: 80px;
+}
+
+.about-col:nth-child(1) {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.about-col:nth-child(2) {
+  padding-left: 160px;
+  margin-top: 80px;
+}
+
+.about1 .about-content .text-content p:nth-child(1),
+.about2 .about-content .text-content p:nth-child(1),
+.about3 .about-content .text-content p:nth-child(1),
+.about4 .about-content .text-content p:nth-child(1),
+.about5 .about-content .text-content p:nth-child(1),
+.about6 .about-content .text-content p:nth-child(1) {
+  font-size: 20;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.about1 .about-content .text-content p:last-child,
+.about2 .about-content .text-content p:last-child,
+.about3 .about-content .text-content p:last-child,
+.about4 .about-content .text-content p:last-child,
+.about5 .about-content .text-content p:last-child,
+.about6 .about-content .text-content p:last-child {
+  margin-top: 7.4px;
+  font-size: 0.75em;
+}
+
+.about1 .about-content,
+.about2 .about-content,
+.about3 .about-content,
+.about4 .about-content,
+.about5 .about-content,
+.about6 .about-content {
+width: 276px;
+height: 160px;
+border-radius: 25px;
+background-color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+
+.about1 .about-content div:first-child,
+.about2 .about-content div:first-child,
+.about3 .about-content div:first-child,
+.about4 .about-content div:first-child,
+.about5 .about-content div:first-child,
+.about6 .about-content div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.about1 .about-content .icon,
+.about2 .about-content .icon,
+.about3 .about-content .icon,
+.about4 .about-content .icon,
+.about5 .about-content .icon,
+.about6 .about-content .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about1 .about-content .icon,
+.about2 .about-content .icon,
+.about3 .about-content .icon,
+.about4 .about-content .icon,
+.about5 .about-content .icon,
+.about6 .about-content .icon {
+  border: 3px solid #234CAD;
+}
+
+.about1 .about-content .about-parts,
+.about2 .about-content .about-parts,
+.about3 .about-content .about-parts,
+.about4 .about-content .about-parts,
+.about5 .about-content .about-parts,
+.about6 .about-content .about-parts {
+  display: flex;
+  margin: 0 20px;
+}
+
+
+/*----------------------------------------------------------------*/
+/* ENDS ILHAM AREAAAAAAAAAA */
+/* =================================================================*/
 
 /*----------------------------------------------------------------*/
 /* HAMZAH AREAAAAAAAAAA */
@@ -282,6 +1448,7 @@ main h5 {
 
 /* Penawaran */
 .penawaran {
+  margin: 2rem auto;
   max-width: 100%;
   font-size: 40px;
   margin-top: 40px;
@@ -320,7 +1487,7 @@ main h5 {
 }
 
 .kolom-container {
-  margin: 80px 100px;
+  margin: 80px 100px 0 0;
 }
 
 @media (max-width: 991px) {
@@ -551,10 +1718,9 @@ main h5 {
 .tombol-kolom1:hover,
 .tombol-kolom2:hover,
 .tombol-kolom3:hover {
-  background-color: #ff7f50;
+  background-color: #234cad;
+  color: #fff;
 }
-
-
 
 /* End Penawaran */
 
@@ -565,9 +1731,10 @@ main h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 150px 20px 0;
+  width: 86%;
+  justify-content: center;
+  margin: 10rem auto;
   padding: 84px 20px 75px;
-
 }
 
 @media (max-width: 991px) {
@@ -621,6 +1788,11 @@ main h5 {
   gap: 20px;
   padding: 10px 10px 10px 25px;
 }
+.email-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
 
 @media (max-width: 991px) {
   .email-container {
@@ -645,7 +1817,6 @@ main h5 {
   border: none;
   background: none;
   outline: none;
-
 }
 
 /* End Email */
@@ -654,11 +1825,8 @@ main h5 {
 .footer {
   align-self: center;
   display: flex;
-  margin-top: 162px;
-  width: 939px;
-  max-width: 100%;
-  justify-content: space-between;
-  gap: 20px;
+  margin: 5rem 0 0 0;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 991px) {
@@ -670,8 +1838,9 @@ main h5 {
 }
 
 .jarak-footer {
-  gap: 20px;
+  gap: 15rem;
   display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 991px) {
@@ -686,7 +1855,7 @@ main h5 {
   display: flex;
   flex-direction: column;
   line-height: normal;
-  width: 67%;
+  /* width: %; */
   margin-left: 0px;
 }
 
@@ -710,7 +1879,7 @@ main h5 {
 .footer-judul {
   color: #234cad;
   white-space: nowrap;
-  font: 700 30px/163% Nunito, sans-serif;
+  font: 700 30px/163% "Nunito", sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -722,7 +1891,7 @@ main h5 {
 .footer-konten {
   color: #234cad;
   margin-top: 25px;
-  font: 400 18px/161% Nunito, sans-serif;
+  font: 400 18px/161% "Nunito", sans-serif;
 }
 
 /* End Footer */
